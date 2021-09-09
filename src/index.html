@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spy Navigation</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="IntersectionObserverを使ってセクションに応じてリンクメニューに色をつける" />
+        <meta name="keywords" content="," />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta property="og:title" content="Spy Navigation" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Spy_Navigation" />
+        <meta property="og:image" content="https://kaito-takase.dev/spy-navigation/ogp.png" />
+        <meta property="og:url" content="https://kaito-takase.dev/spy-navigation/" />
+        <meta property="og:description" content="IntersectionObserverを使ってセクションに応じてリンクメニューに色をつける" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="Spy_Navigation_JP" />
+        <meta name="twitter:title" content="Spy Navigation" />
+        <meta name="twitter:description" content="IntersectionObserverを使ってセクションに応じてリンクメニューに色をつける" />
+        <meta name="twitter:image" content="https://kaito-takase.dev/spy-navigation/ogp.png" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <section class="loading" data-loading="wrap">
+            <p class="loading__title">
+                <span class="loading__title--text" data-loading="text">L</span>
+                <span class="loading__title--text" data-loading="text">O</span>
+                <span class="loading__title--text" data-loading="text">A</span>
+                <span class="loading__title--text" data-loading="text">D</span>
+                <span class="loading__title--text" data-loading="text">I</span>
+                <span class="loading__title--text" data-loading="text">N</span>
+                <span class="loading__title--text" data-loading="text">G</span>
+            </p>
+        </section>
+        <main data-scroll-container>
+            <section class="kv">
+                <h1 class="kv__title">Scroll Spy Navigation</h1>
+                <a href="/" class="kv__link">Go Home</a>
+                <a href="https://github.com/kaitoooo/scroll-spy-navigation" target="_blank" rel="noopener noreferrer" class="kv__link kv__link-git">Git Hub</a>
+            </section>
+            <section class="section" id="Section01">
+                <h2 class="section__title">Section01</h2>
+                <ul class="section__list">
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="1" class="section__list--img">
+                            <img src="img/img1.jpeg" alt="" role="none" width="858" height="1280" />
+                        </figure>
+                    </li>
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="2.5" class="section__list--img">
+                            <img src="img/img2.jpeg" alt="" role="none" width="894" height="1280" />
+                        </figure>
+                    </li>
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="4" class="section__list--img">
+                            <img src="img/img3.jpeg" alt="" role="none" width="931" height="1280" />
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="Section02">
+                <h2 class="section__title">Section02</h2>
+                <ul class="section__list">
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="1" class="section__list--img">
+                            <img src="img/img4.jpeg" alt="" role="none" width="824" height="1280" />
+                        </figure>
+                    </li>
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="2.5" class="section__list--img">
+                            <img src="img/img5.jpeg" alt="" role="none" width="940" height="1280" />
+                        </figure>
+                    </li>
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="4" class="section__list--img">
+                            <img src="img/img6.jpeg" alt="" role="none" width="973" height="1280" />
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section class="section section__wrap" id="Section03">
+                <h2 class="section__sub">Section03</h2>
+                <section class="section" id="Section03-Article01">
+                    <h2 class="section__title">Article01</h2>
+                    <ul class="section__list">
+                        <li class="section__list--item">
+                            <figure data-scroll data-scroll-speed="1" class="section__list--img">
+                                <img src="img/img9.jpeg" alt="" role="none" width="973" height="1280" />
+                            </figure>
+                        </li>
+                        <li class="section__list--item">
+                            <figure data-scroll data-scroll-speed="2.5" class="section__list--img">
+                                <img src="img/img7.jpeg" alt="" role="none" width="888" height="1280" />
+                            </figure>
+                        </li>
+                        <li class="section__list--item">
+                            <figure data-scroll data-scroll-speed="4" class="section__list--img">
+                                <img src="img/img8.jpeg" alt="" role="none" width="940" height="1280" />
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section" id="Section03-Article02">
+                    <h2 class="section__title">Article02</h2>
+                    <ul class="section__list">
+                        <li class="section__list--item">
+                            <figure data-scroll data-scroll-speed="1" class="section__list--img">
+                                <img src="img/img10.jpeg" alt="" role="none" width="967" height="1280" />
+                            </figure>
+                        </li>
+                        <li class="section__list--item">
+                            <figure data-scroll data-scroll-speed="2.5" class="section__list--img">
+                                <img src="img/img11.jpeg" alt="" role="none" width="910" height="1280" />
+                            </figure>
+                        </li>
+                        <li class="section__list--item">
+                            <figure data-scroll data-scroll-speed="4" class="section__list--img">
+                                <img src="img/img12.jpeg" alt="" role="none" width="938" height="1280" />
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="section" id="Section04">
+                <h2 class="section__title">Section04</h2>
+                <ul class="section__list">
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="1" class="section__list--img">
+                            <img src="img/img4.jpeg" alt="" role="none" width="824" height="1280" />
+                        </figure>
+                    </li>
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="2.5" class="section__list--img">
+                            <img src="img/img5.jpeg" alt="" role="none" width="940" height="1280" />
+                        </figure>
+                    </li>
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="4" class="section__list--img">
+                            <img src="img/img6.jpeg" alt="" role="none" width="973" height="1280" />
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="Section05">
+                <h2 class="section__title">Section05</h2>
+                <ul class="section__list">
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="1" class="section__list--img">
+                            <img src="img/img4.jpeg" alt="" role="none" width="824" height="1280" />
+                        </figure>
+                    </li>
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="2.5" class="section__list--img">
+                            <img src="img/img5.jpeg" alt="" role="none" width="940" height="1280" />
+                        </figure>
+                    </li>
+                    <li class="section__list--item">
+                        <figure data-scroll data-scroll-speed="4" class="section__list--img">
+                            <img src="img/img6.jpeg" alt="" role="none" width="973" height="1280" />
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <nav class="nav">
+            <ol class="nav__list">
+                <li class="nav__list--item"><a href="#Section01" class="nav__link">Section01</a></li>
+                <li class="nav__list--item"><a href="#Section02" class="nav__link">Section02</a></li>
+                <li class="nav__list--item">
+                    <a href="#Section03" class="nav__link">Section03</a>
+                    <ul>
+                        <li class="nav__list--item"><a href="#Section03-Article01" class="nav__link">Article01</a></li>
+                        <li class="nav__list--item"><a href="#Section03-Article02" class="nav__link">Article02</a></li>
+                    </ul>
+                </li>
+                <li class="nav__list--item"><a href="#Section04" class="nav__link">Section04</a></li>
+                <li class="nav__list--item"><a href="#Section05" class="nav__link">Section05</a></li>
+            </ol>
+        </nav>
+    </body>
+</html>

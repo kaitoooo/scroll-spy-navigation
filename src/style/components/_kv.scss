@@ -1,0 +1,49 @@
+.kv {
+    position: relative;
+    @include sp {
+        height: 100vh;
+    }
+    &__title {
+        font-size: 1.5rem;
+        font-family: 'Kaisei Tokumin', serif;
+        margin: 10px 0 10px 30px;
+        @include sp {
+            position: absolute;
+            top: 37%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: get_vw_sp(16);
+            margin: 0;
+        }
+    }
+    &__link {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-family: 'Kaisei Tokumin', serif;
+        margin: 10px 0 10px 30px;
+        transition: ease 0.3s;
+
+        @include sp {
+            position: absolute;
+            top: 41%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            font-size: get_vw_sp(16);
+        }
+
+        &-git {
+            margin: 10px 0 100px 30px;
+            @include sp {
+                top: 44%;
+                margin: 0;
+            }
+        }
+        &:hover {
+            transition: ease 0.3s;
+            color: #666;
+        }
+    }
+}

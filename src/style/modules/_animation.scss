@@ -1,0 +1,12 @@
+@keyframes smoke {
+    0% {
+        transform: rotate(0deg) translate3d(0%) skew(0deg) scale(1);
+        opacity: 1;
+        filter: blur(0.02vmin);
+    }
+    100% {
+        transform: rotate(15deg) translate3d(85%, -75%, 0) skew(-30deg) scale(2);
+        opacity: 0;
+        filter: blur(2.5vmin);
+    }
+}

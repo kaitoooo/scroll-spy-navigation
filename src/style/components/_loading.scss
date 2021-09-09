@@ -1,0 +1,81 @@
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1000;
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-style: italic;
+        font-size: get_vw(96);
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+        filter: blur(0.02vmin);
+        text-shadow: 0 0 2vmin #df725d;
+        letter-spacing: -15px;
+        @include sp {
+            top: 40%;
+            text-outline: 43% 0 #000;
+            font-size: get_vw_sp(22);
+            letter-spacing: 0;
+        }
+    }
+    p {
+        &.loading__title {
+            animation-delay: 1s;
+
+            .loading__title--text {
+                display: inline-block;
+
+                &:nth-child(1) {
+                    &.is-active {
+                        animation: smoke 1.75s ease-in forwards;
+                        animation-delay: 0.6s;
+                    }
+                }
+                &:nth-child(2) {
+                    &.is-active {
+                        animation: smoke 1.75s ease-in forwards;
+                        animation-delay: 1s;
+                    }
+                }
+                &:nth-child(3) {
+                    &.is-active {
+                        animation: smoke 1.75s ease-in forwards;
+                        animation-delay: 0.8s;
+                    }
+                }
+                &:nth-child(4) {
+                    &.is-active {
+                        animation: smoke 1.75s ease-in forwards;
+                        animation-delay: 1.4s;
+                    }
+                }
+                &:nth-child(5) {
+                    &.is-active {
+                        animation: smoke 1.75s ease-in forwards;
+                        animation-delay: 1.2s;
+                    }
+                }
+                &:nth-child(6) {
+                    &.is-active {
+                        animation: smoke 1.75s ease-in forwards;
+                        animation-delay: 1.5s;
+                    }
+                }
+                &:nth-child(7) {
+                    &.is-active {
+                        animation: smoke 1.75s ease-in forwards;
+                        animation-delay: 1.3s;
+                    }
+                }
+            }
+        }
+    }
+}
